@@ -1,0 +1,17 @@
+USE 2_2_1;
+
+drop table if exists CAR cascade ;
+CREATE TABLE CAR (
+                     user_id int primary key ,
+                     model VARCHAR(100),
+                     series INT
+);
+
+drop table if exists USER;
+CREATE TABLE USER (
+                      id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+                      name VARCHAR(100),
+                      last_name VARCHAR(100),
+                      email VARCHAR(100),
+                      car_id INT
+);
